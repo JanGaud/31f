@@ -5,7 +5,7 @@ export default class Horaire{
      * @private
      */
     #aData;
-    #bActif;
+    #bActif; 
     
     /**
      * Constructeur de la classe, fait la configuration de base du composant
@@ -35,11 +35,11 @@ export default class Horaire{
 
     setData(donnees){
        
-
     }
     sauvegarderValeur (){
-        
+            
     }
+    
 
     getData(){
        
@@ -58,12 +58,14 @@ export default class Horaire{
      * Méthode qui affiche le composant dans son parent. 
      */
     rendu(){
+        let i = 0;
         let chaineHTML = `<legend>Horaire</legend>`;
         this.#aData.forEach((unCours)=>{
-            chaineHTML += `<p>${unCours.nom}</p>`;
+            chaineHTML += `<p>${unCours.nom}</p>`
             unCours.horaire.forEach((sHeure)=>{
-                chaineHTML += `<p>Ceci devrait être un checkbox pour : ${sHeure}`;
-            })
+                    i++
+                    chaineHTML += `<input type="checkbox" id="choixHoraire-${i}">: ${sHeure}`;
+           })
         })
 
 
