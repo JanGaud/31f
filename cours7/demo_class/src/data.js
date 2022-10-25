@@ -12,7 +12,7 @@
  * Tableau de donnée de type cours
  * @type {cours[]}
  */
- export const cours = [{
+export const cours = [{
     sigle : "582-31F",
     nom : "Prog Inter Web 2",
     prof : "JM",

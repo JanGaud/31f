@@ -65,9 +65,7 @@ export default class Horaire{
                 chaineHTML += `<p>Ceci devrait être un checkbox pour : ${sHeure}`;
             })
         })
-
-
-        this.domParent.innerHTML = chaineHTML;
+     
         
     }
 }
